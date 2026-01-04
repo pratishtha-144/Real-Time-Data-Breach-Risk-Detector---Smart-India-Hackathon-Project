@@ -1,0 +1,66 @@
+[
+  {
+    "scan_completed": true,
+    "risk_score": 100,
+    "risk_level": "CRITICAL",
+    "total_issues": 4,
+    "issues_by_detector": {
+      "authentication": 0,
+      "api_security": 2,
+      "misconfiguration": 2
+    },
+    "all_issues": [
+      {
+        "type": "exposed_endpoint",
+        "endpoint": "/api/admin/settings",
+        "public_access": true,
+        "severity": "CRITICAL",
+        "description": "Sensitive endpoint '/api/admin/settings' is publicly accessible"
+      },
+      {
+        "type": "exposed_endpoint",
+        "endpoint": "/api/database/dump",
+        "public_access": true,
+        "severity": "CRITICAL",
+        "description": "Sensitive endpoint '/api/database/dump' is publicly accessible"
+      },
+      {
+        "type": "public_endpoint",
+        "endpoint": "/api/admin/settings",
+        "risk_level": "HIGH",
+        "severity": "INFO",
+        "description": "Endpoint '/api/admin/settings' is publicly accessible"
+      },
+      {
+        "type": "public_endpoint",
+        "endpoint": "/api/database/dump",
+        "risk_level": "HIGH",
+        "severity": "INFO",
+        "description": "Endpoint '/api/database/dump' is publicly accessible"
+      }
+    ],
+    "alert_summary": {
+      "CRITICAL": 2,
+      "WARNING": 0,
+      "INFO": 2,
+      "total": 4
+    },
+    "recommendations": [
+      "\ud83d\udd12 Add authentication to all sensitive API endpoints",
+      "\ud83d\udd12 Implement API key validation"
+    ],
+    "risk_breakdown": {
+      "exposed_endpoint": {
+        "count": 2,
+        "weight": 40,
+        "contribution": 80
+      },
+      "public_endpoint": {
+        "count": 2,
+        "weight": 10,
+        "contribution": 20
+      }
+    },
+    "timestamp": "2026-01-04T14:54:10.561265"
+  }
+]

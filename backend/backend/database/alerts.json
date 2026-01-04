@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "timestamp": "2026-01-04T14:54:10.560579",
+    "severity": "CRITICAL",
+    "type": "exposed_endpoint",
+    "description": "Sensitive endpoint '/api/admin/settings' is publicly accessible",
+    "details": {
+      "type": "exposed_endpoint",
+      "endpoint": "/api/admin/settings",
+      "public_access": true,
+      "severity": "CRITICAL",
+      "description": "Sensitive endpoint '/api/admin/settings' is publicly accessible"
+    }
+  },
+  {
+    "id": 1,
+    "timestamp": "2026-01-04T14:54:10.560920",
+    "severity": "CRITICAL",
+    "type": "exposed_endpoint",
+    "description": "Sensitive endpoint '/api/database/dump' is publicly accessible",
+    "details": {
+      "type": "exposed_endpoint",
+      "endpoint": "/api/database/dump",
+      "public_access": true,
+      "severity": "CRITICAL",
+      "description": "Sensitive endpoint '/api/database/dump' is publicly accessible"
+    }
+  },
+  {
+    "id": 1,
+    "timestamp": "2026-01-04T14:54:10.561040",
+    "severity": "INFO",
+    "type": "public_endpoint",
+    "description": "Endpoint '/api/admin/settings' is publicly accessible",
+    "details": {
+      "type": "public_endpoint",
+      "endpoint": "/api/admin/settings",
+      "risk_level": "HIGH",
+      "severity": "INFO",
+      "description": "Endpoint '/api/admin/settings' is publicly accessible"
+    }
+  },
+  {
+    "id": 1,
+    "timestamp": "2026-01-04T14:54:10.561144",
+    "severity": "INFO",
+    "type": "public_endpoint",
+    "description": "Endpoint '/api/database/dump' is publicly accessible",
+    "details": {
+      "type": "public_endpoint",
+      "endpoint": "/api/database/dump",
+      "risk_level": "HIGH",
+      "severity": "INFO",
+      "description": "Endpoint '/api/database/dump' is publicly accessible"
+    }
+  }
+]

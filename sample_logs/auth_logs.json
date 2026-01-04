@@ -1,0 +1,58 @@
+[
+    {
+        "timestamp": "2026-01-04T02:30:15",
+        "user": "admin",
+        "ip": "192.168.1.100",
+        "action": "login_failed",
+        "reason": "invalid_password"
+    },
+    {
+        "timestamp": "2026-01-04T02:31:22",
+        "user": "admin",
+        "ip": "192.168.1.100",
+        "action": "login_failed",
+        "reason": "invalid_password"
+    },
+    {
+        "timestamp": "2026-01-04T02:32:45",
+        "user": "admin",
+        "ip": "192.168.1.100",
+        "action": "login_failed",
+        "reason": "invalid_password"
+    },
+    {
+        "timestamp": "2026-01-04T02:33:10",
+        "user": "admin",
+        "ip": "192.168.1.100",
+        "action": "login_failed",
+        "reason": "invalid_password"
+    },
+    {
+        "timestamp": "2026-01-04T03:15:00",
+        "user": "john_doe",
+        "ip": "203.0.113.45",
+        "action": "login_success",
+        "reason": "valid_credentials"
+    },
+    {
+        "timestamp": "2026-01-04T14:20:30",
+        "user": "jane_smith",
+        "ip": "198.51.100.22",
+        "action": "login_success",
+        "reason": "valid_credentials"
+    },
+    {
+        "timestamp": "2026-01-04T01:45:00",
+        "user": "db_admin",
+        "ip": "10.0.0.50",
+        "action": "login_success",
+        "reason": "valid_credentials"
+    },
+    {
+        "timestamp": "2026-01-04T15:30:00",
+        "user": "support_user",
+        "ip": "172.16.0.10",
+        "action": "login_success",
+        "reason": "valid_credentials"
+    }
+]

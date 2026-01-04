@@ -1,0 +1,42 @@
+[
+    {
+        "timestamp": "2026-01-04T10:15:30",
+        "endpoint": "/api/users",
+        "method": "GET",
+        "auth_token": null,
+        "ip": "45.33.22.11",
+        "status_code": 200
+    },
+    {
+        "timestamp": "2026-01-04T10:16:45",
+        "endpoint": "/api/admin/settings",
+        "method": "POST",
+        "auth_token": null,
+        "ip": "45.33.22.11",
+        "status_code": 200
+    },
+    {
+        "timestamp": "2026-01-04T11:20:00",
+        "endpoint": "/api/data/export",
+        "method": "GET",
+        "auth_token": "Bearer abc123xyz",
+        "ip": "192.168.1.50",
+        "status_code": 200
+    },
+    {
+        "timestamp": "2026-01-04T12:30:15",
+        "endpoint": "/api/health",
+        "method": "GET",
+        "auth_token": null,
+        "ip": "203.0.113.89",
+        "status_code": 200
+    },
+    {
+        "timestamp": "2026-01-04T13:45:22",
+        "endpoint": "/api/database/dump",
+        "method": "GET",
+        "auth_token": null,
+        "ip": "198.51.100.77",
+        "status_code": 200
+    }
+]

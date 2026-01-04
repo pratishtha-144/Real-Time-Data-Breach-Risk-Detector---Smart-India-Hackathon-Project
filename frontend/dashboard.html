@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Breach Risk Detector - Security Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">🛡️</span>
+                <h1>Data Breach Risk Detector</h1>
+            </div>
+            <div class="header-actions">
+                <button id="scanBtn" class="btn btn-primary">
+                    <span class="btn-icon">🔍</span>
+                    Run Security Scan
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Dashboard -->
+    <main class="dashboard">
+        <div class="container">
+            
+            <!-- Risk Overview Section -->
+            <section class="risk-overview">
+                <div class="card risk-card" id="riskCard">
+                    <div class="card-header">
+                        <h2>Current Risk Level</h2>
+                        <span id="lastScanTime" class="meta-text">No scans yet</span>
+                    </div>
+                    <div class="risk-display">
+                        <div class="risk-level-badge" id="riskBadge">
+                            <span class="risk-icon">⚪</span>
+                            <span class="risk-level-text" id="riskLevelText">UNKNOWN</span>
+                        </div>
+                        <div class="risk-score">
+                            <div class="score-label">Risk Score</div>
+                            <div class="score-value" id="riskScore">--</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Statistics Cards -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon critical">🔴</div>
+                        <div class="stat-content">
+                            <div class="stat-label">Critical Issues</div>
+                            <div class="stat-value" id="criticalCount">0</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon warning">🟡</div>
+                        <div class="stat-content">
+                            <div class="stat-label">Warnings</div>
+                            <div class="stat-value" id="warningCount">0</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon info">🔵</div>
+                        <div class="stat-content">
+                            <div class="stat-label">Info</div>
+                            <div class="stat-value" id="infoCount">0</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Issues Section -->
+            <section class="issues-section">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Detected Security Issues</h2>
+                        <span id="issuesCount" class="badge">0 Issues</span>
+                    </div>
+                    <div id="issuesList" class="issues-list">
+                        <div class="empty-state">
+                            <div class="empty-icon">🔍</div>
+                            <p>No security scan performed yet</p>
+                            <p class="empty-subtext">Click "Run Security Scan" to analyze your system</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Recommendations Section -->
+            <section class="recommendations-section">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Security Recommendations</h2>
+                    </div>
+                    <div id="recommendationsList" class="recommendations-list">
+                        <div class="empty-state">
+                            <div class="empty-icon">💡</div>
+                            <p>No recommendations available</p>
+                            <p class="empty-subtext">Run a scan to get personalized security recommendations</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="loading-overlay hidden">
+        <div class="loading-spinner">
+            <div class="spinner"></div>
+            <p>Running security scan...</p>
+        </div>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
